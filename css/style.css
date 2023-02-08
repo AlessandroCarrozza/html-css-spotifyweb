@@ -66,6 +66,19 @@ aside{
     background-color: var(--aside-color);
 }
 
+aside img{
+    height: 30px;
+    margin: 0.3rem 0;
+}
+
+aside a{
+    display: block;
+}
+
+aside .icon{
+    text-align: center;
+}
+
 .content{
     width: calc(100vw - 50px);
     background-color: var(--content-color);
