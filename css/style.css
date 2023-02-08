@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* utility */
@@ -21,6 +21,10 @@
 
 a{
     text-decoration: none;
+}
+
+.col-white{
+    color: #ffffff;
 }
 
 :root{
@@ -61,22 +65,25 @@ main{
 }
 
 aside{
-    /* height: calc(100vh - 100px); */
     width: 50px;
     background-color: var(--aside-color);
 }
 
 aside img{
     height: 30px;
-    margin: 0.3rem 0;
 }
 
 aside a{
     display: block;
+    padding-top: 10px;
 }
 
 aside .icon{
     text-align: center;
+}
+
+.aside-content-big{
+    display: none;
 }
 
 .content{
@@ -115,13 +122,32 @@ nav{
 
 nav li{
     list-style-type: none;
-    padding: 1rem 1.2rem;
+    padding: 1.2rem 1.2rem;
     font-size: 0.9rem;
+    font-weight: 600;
+}
+
+nav li a:hover{
+    color: var(--title-icon-color);
+}
+
+nav li a{
+    color: var(--nav-subtitle-color);
 }
 
 nav ul{
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     flex-wrap: wrap;
+}
+
+nav a .line{
+    width: 40px;
+    height: 3px;
+    background-color: greenyellow;
+    position: relative;
+    left: 50%;
+    top: 3px;
+    transform: translate(-50%, 0);
 }
 
 
@@ -162,6 +188,14 @@ nav ul{
         width: 300px;
     }
 
+    aside .icon{
+        display: none;
+    }
+
+    .aside-content-big{
+        display: block;
+    }
+
     .content{
         width: calc(100% - 300px);
     }
@@ -171,9 +205,74 @@ nav ul{
         min-width: calc(100% - 300px);
     } 
 
-    nav li{
-        padding: 1rem 1.5rem;
+    nav li a{
+        padding: 0 0.5rem;
     }
+
+    .icon-text .logo-big{
+        height: 50px;
+        margin: 1rem 0;
+    }
+
+    .icon-text a .text{
+        color: var(--nav-subtitle-color);
+    }
+
+    .icon-text{
+        position: relative;
+    }
+
+    .icon-text a .text.col-white{
+        color: var(--title-icon-color);
+    }
+
+    .icon-text a .line{
+        display: inline-block;
+        height: 40px;
+        width: 3px;
+        background-color: greenyellow;
+        position: absolute;
+        left: 0;
+    }
+
+    .playlists{
+        padding-top: 25px;
+    }
+
+    .playlists h3{
+        color: var(--title-icon-color);
+    }
+
+    .playlists i{
+        font-size: 50px;
+    }
+
+    .playlists a{
+        color: var(--nav-subtitle-color);
+    }
+
+    .aside-content-big a, .aside-content-big h3{
+        padding-left: 30px;
+    }
+
+    .aside-content-big a{
+        font-weight: 600;
+    }
+
+    .aside-content-big span.text{
+        padding-left: 10px;
+    }
+
+    aside a{
+        padding: 0.5rem 0;
+    } 
+
+    .aside-content-big a:hover, .aside-content-big a:hover span{
+        color: var(--title-icon-color);
+    }
+
+
+    
 }
 
 
