@@ -19,6 +19,10 @@
     justify-content: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root{
     --content-color: #141922;
     --aside-color: #000000;
@@ -31,7 +35,10 @@
 
 /* regole di debug */
 
-
+.debug .cta{
+    height: 100px;
+    background-color: red;
+}
 
 
 
@@ -41,6 +48,15 @@
 footer{
     height: 100px;
     background-color: var(--footer-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+main{
+    height: calc(100vh - 100px);
 }
 
 aside{
@@ -49,11 +65,58 @@ aside{
     background-color: var(--aside-color);
 }
 
-main{
-    height: calc(100vh - 100px);
-}
-
 .content{
     width: calc(100vw - 50px);
     background-color: var(--content-color);
+}
+
+nav li{
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.nav-top{
+    margin: 1rem 0;
+}
+
+.nav-bottom{
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media screen and (min-width: 768px){
+    aside{
+        width: 400px;
+    }
+}
+
+
+
+@media screen and (min-width: 992px){
+    aside{
+        width: 350px;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    aside{
+        width: 250px;
+    }
 }
