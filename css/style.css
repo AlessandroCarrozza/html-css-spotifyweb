@@ -40,6 +40,12 @@ a{
     background-color: red;
 }
 
+.debug #recently-played .album{
+    height: 250px;
+    background-color: green;
+    border: 1px solid black;
+}
+
 
 
 
@@ -68,24 +74,52 @@ aside{
 .content{
     width: calc(100vw - 50px);
     background-color: var(--content-color);
+    overflow-y: auto;
+}
+
+.content .cta{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    z-index: 2;
+    min-width: calc(100% - 50px);
+}
+
+nav{
+    padding-top: 90px;
 }
 
 nav li{
     list-style-type: none;
-    padding: 0 1rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
 }
 
-.nav-top{
+nav ul{
     margin: 1rem 0;
-}
-
-.nav-bottom{
-    margin: 2rem 0;
+    flex-wrap: wrap;
 }
 
 
+.content section{
+    width: 92%;
+    margin: auto;
+}
 
+#recently-played h2{
+    color: var(--title-icon-color);
+    font-weight: 700;
+}
 
+#recently-played .albums{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#recently-played .album{
+    padding: 0.2rem;
+    width: calc(100% / 2 - 0.4rem);
+}
 
 
 
@@ -101,22 +135,27 @@ nav li{
 
 @media screen and (min-width: 768px){
     aside{
-        width: 400px;
+        width: 320px;
     }
+
+    .content{
+        width: calc(100% - 320px);
+    }
+
+    .content .cta{
+        left: 320px; 
+        min-width: calc(100vw - 320px);
+    } 
 }
 
 
 
 @media screen and (min-width: 992px){
-    aside{
-        width: 350px;
-    }
+    
 }
 
 
 
 @media screen and (min-width: 1200px){
-    aside{
-        width: 250px;
-    }
+    
 }
