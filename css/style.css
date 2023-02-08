@@ -2,4 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* utility */
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+:root{
+    --main-color: #141922;
+    --aside-color: #000000;
+    --cta-color: #080b12;
+    --nav-subtitle-color: #828489;
+    --title-icon-color: #ffffff;
+    --footer-color: #282828;
+}
+
+
+/* regole di debug */
+
+
+
+
+
+
+/* ------- codice --------- */
+
+footer{
+    height: 100px;
+    background-color: var(--footer-color);
+}
+
+aside{
+    height: calc(100vh - 100px);
+    width: 50px;
+    background-color: var(--aside-color);
+}
+
+main{
+    height: calc(100vh - 100px);
+    width: calc(100vh - 50px);
+    background-color: var(--main-color);
 }
