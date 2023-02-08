@@ -35,11 +35,6 @@ a{
 
 /* regole di debug */
 
-.debug .cta{
-    height: 100px;
-    background-color: red;
-}
-
 .debug #recently-played .album{
     height: 250px;
     background-color: green;
@@ -83,6 +78,22 @@ aside{
     left: 50px;
     z-index: 2;
     min-width: calc(100% - 50px);
+    height: 80px;
+    background-color: var(--cta-color);
+}
+
+.upgrade-btn{
+    display: inline-block;
+    border: 1.5px solid var(--title-icon-color);
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: var(--title-icon-color);
 }
 
 nav{
