@@ -125,7 +125,7 @@ aside .icon{
 }
 
 nav{
-    padding: 90px 0 30px;
+    padding-top: 90px;
 }
 
 nav li{
@@ -162,39 +162,59 @@ nav a .line{
 .content section{
     width: 92%;
     margin: auto;
+    padding-top: 2rem;
 }
 
-#recently-played h2{
+.content section h2{
     color: var(--title-icon-color);
     font-weight: 700;
+    font-size: 2rem;
 }
 
-#recently-played .albums{
+.content section .albums{
     flex-wrap: wrap;
 }
 
-#recently-played .album{
+.content section .album{
     padding: 2rem 0.8rem 0 0;
     width: calc(100% / 2 - 0.4rem);
     list-style-type: none;
 }
 
-#recently-played .album a{
+.content section .album a{
     width: 100%;
 }
 
-#recently-played .album img{
+.content section .album img{
     width: 100%;
 }
 
-#recently-played .album h3{
+.content section .album h3{
     padding: 0.5rem 0 0.3rem;
 }
 
-#recently-played .album .subtitle{
+.content section .album .subtitle{
     color: var(--nav-subtitle-color);
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+#create-for-you .subtitle, #popular-artists .subtitle{
+    color: var(--nav-subtitle-color);
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+#create-for-you{
+    padding-top: 2.5rem;
+}
+
+#popular-artists{
+    padding: 2rem 0 2rem;
+}
+
+#popular-artists img{
+    border-radius: 50%;
 }
 
 
@@ -306,10 +326,10 @@ nav a .line{
 
 @media screen and (min-width: 992px){
     nav li{
-        padding: 1rem 1.2rem;
+        padding: 1rem 0.8rem;
     } 
 
-    #recently-played .album{
+    .content section .album{
         width: calc(100% / 4 - 0.4rem);
     }
 }
@@ -318,10 +338,10 @@ nav a .line{
 
 @media screen and (min-width: 1200px){
     nav li{
-        padding: 1rem 1.2rem;
+        padding: 1rem 0.5rem;
     } 
 
-    #recently-played .album{
+    .content section .album{
         width: calc(100% / 6 - 0.4rem);
     }
 }
