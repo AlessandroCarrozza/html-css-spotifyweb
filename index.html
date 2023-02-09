@@ -13,11 +13,14 @@
 </head>
 
 <body class="debug">
-
+    
+    <!-- inizio main -->
     <main class="flex">
-
-        <aside>
-            <div class="icons">
+        
+        <!-- inizio aside -->
+        <aside class="flex">
+            <!-- inizio aside mobile -->
+            <div class="icons-top">
                 <div class="icon">
                     <a href="#">
                         <img src="img/logo-small.svg" alt="Logo">
@@ -40,8 +43,19 @@
                 </div>
             </div>
 
+            <div class="icons-bottom">
+                <a href="#">
+                    <img src="img/download.svg" alt="Download" class="download">
+                </a>
 
+                <a href="#">
+                    <img src="img/profile.svg" alt="Profilo" class="profile">
+                </a>
+            </div> 
+            <!-- fine aside mobile -->
 
+            
+            <!-- inizio aside desktop -->
             <section id="aside-content-top">
                 <ul class="icons-texts">
                     <li class="icon-text">
@@ -122,18 +136,23 @@
                     </a>
                     <span class="name col-white">John Doe</span>
                 </div>
-
             </section>
-
+            <!-- fine aside desktop -->
         </aside>
+        <!-- fine aside -->
 
+
+        <!-- inizio contenuto principale -->
         <div class="content">
+            <!-- inizio call-to-action -->
             <div class="cta">
                 <a href="#">
                     <span class="upgrade-btn">EFFETTUA L'UPGRADE</span>
                 </a>
             </div>
+            <!-- fine call-to-action -->
 
+            <!-- inizio nav -->
             <nav>
                 <ul class="flex justify-center">
                     <li>
@@ -158,10 +177,11 @@
                         <a href="#">SCOPRI</a>
                     </li>
                 </ul>
-          
             </nav>
+            <!-- fine nav -->
 
 
+            <!-- inizio sezioni -->
             <section id="recently-played">
                 <h2>Recently played</h2>
 
@@ -236,14 +256,13 @@
                         </a>
 
                         <h3 class="col-white txt-center">Daily Mix 1</h3>
-                    </li>
-                    
+                    </li>           
                 </ul>
             </section>
 
             <section id="popular-artists">
-                <h2>Artisti piu' popolari</h2>
 
+                <h2>Artisti piu' popolari</h2>
                 <div class="subtitle">Piu' ascolti, piu' accurati saranno i suggerimenti.</div>
 
                 <ul class="albums flex">
@@ -261,19 +280,24 @@
 
                         <h3 class="col-white txt-center">Ludovico Einaudi</h3>
                     </li>
-                    
                 </ul>
             </section>
-
+            <!-- fine sezioni -->
         </div>
-
+        <!-- fine contenuto principale -->
     </main>
 
+    <!-- inizio footer -->
     <footer class="flex justify-between">
-        <div class="footer-left"></div>
+
+        <div class="footer-left">
+            <img src="" alt="">
+        </div>
         <div class="footer-center"></div>
         <div class="footer-right"></div>
+
     </footer>
+    <!-- fine footer -->
 
 </body>
 

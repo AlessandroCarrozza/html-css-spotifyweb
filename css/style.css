@@ -49,19 +49,9 @@ a{
 }
 
 
-/* regole di debug */
-
-/* .debug #recently-played .album{
-    height: 250px;
-    background-color: green;
-    border: 1px solid black;
-} */
-
-
-
-
 /* ------- codice --------- */
 
+/* inizio creazione delle macroaree */
 footer{
     height: 100px;
     background-color: var(--footer-color);
@@ -79,9 +69,14 @@ main{
 aside{
     width: 50px;
     background-color: var(--aside-color);
+    flex-direction: column;
+    justify-content: space-between;
 }
+/* fine creazione delle macroaree */
 
-aside img{
+
+/* inizio aside */
+aside .icons-top img{
     height: 30px;
 }
 
@@ -94,6 +89,22 @@ aside .icon{
     text-align: center;
 }
 
+.icons-bottom{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons-bottom .download{
+    height: 20px;
+}
+
+.icons-bottom .profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--nav-subtitle-color);
+}
+
  #aside-content-top{
     display: none;
 }
@@ -101,8 +112,10 @@ aside .icon{
 #aside-content-bottom{
     display: none;
 }
+/* fine aside */
 
 
+/* inizio contenuto principale */
 .content{
     width: calc(100vw - 50px);
     background-color: var(--content-color);
@@ -167,7 +180,6 @@ nav a .line{
     transform: translate(-50%, 0);
 }
 
-
 .content section{
     width: 92%;
     margin: auto;
@@ -225,8 +237,10 @@ nav a .line{
 #popular-artists img{
     border-radius: 50%;
 }
+/* fine contenuto principale */
 
 
+/* inizio footer */
 .footer-left{
     /* debug */ background-color: red;
     width: 25%;
@@ -244,23 +258,30 @@ nav a .line{
     width: 25%;
     height: 100%;
 }
+/* fine footer */
 
 
 
 
-
-
-
-
-
-/* responsive */
+/* --------- responsive --------- */
 
 @media screen and (min-width: 768px){
+
+    /* inizio aside */
     aside{
         width: 300px;
+        display: block;
+    }
+
+    aside img{
+        height: 30px;
     }
 
     aside .icon{
+        display: none;
+    }
+
+    .icons-bottom{
         display: none;
     }
 
@@ -270,19 +291,6 @@ nav a .line{
         overflow-y: hidden;
         display: flex;
         flex-direction: column; 
-    }
-
-    .content{
-        width: calc(100% - 300px);
-    }
-
-    .content .cta{
-        left: 300px; 
-        min-width: calc(100% - 300px);
-    } 
-
-    nav li a{
-        padding: 0 0.5rem;
     }
 
     .icon-text .logo-big{
@@ -393,7 +401,23 @@ nav a .line{
         font-weight: 700;
         padding-left: 10px;
     }
+    /* fine aside */
 
+
+    /* inizio contenuto principale */
+    .content{
+        width: calc(100% - 300px);
+    }
+
+    .content .cta{
+        left: 300px; 
+        min-width: calc(100% - 300px);
+    } 
+
+    nav li a{
+        padding: 0 0.5rem;
+    }
+    /* fine contenuto principale */
     
 }
 
@@ -408,8 +432,6 @@ nav a .line{
         width: calc(100% / 4 - 0.4rem);
     }
 
-    
-    
 }
 
 
@@ -423,6 +445,4 @@ nav a .line{
         width: calc(100% / 6 - 0.4rem);
     }
 
-    
-    
 }
