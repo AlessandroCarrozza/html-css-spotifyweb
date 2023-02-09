@@ -92,7 +92,10 @@ aside .icon{
 
  #aside-content-top{
     display: none;
-    height: calc(100% - 100px);
+}
+
+#aside-content-bottom{
+    display: none;
 }
 
 
@@ -241,8 +244,11 @@ nav a .line{
     }
 
     #aside-content-top{
+        height: calc(100% - 100px);
         display: block;
         overflow-y: hidden;
+        display: flex;
+        flex-direction: column; 
     }
 
     .content{
@@ -286,7 +292,7 @@ nav a .line{
 
     .playlists{
         padding-top: 25px;
-        overflow-y: scroll;
+        overflow-y: hidden;
         flex-direction: column;
     }
 
@@ -331,6 +337,7 @@ nav a .line{
     }
 
     #aside-content-bottom{
+        display: block;
         height: 100px;
         padding: 0 25px;
     }
