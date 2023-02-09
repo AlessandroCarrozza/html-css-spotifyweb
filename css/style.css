@@ -27,6 +27,14 @@ a{
     color: #ffffff;
 }
 
+.mrg-auto{
+    margin: auto;
+}
+
+.txt-center{
+    text-align: center;
+}
+
 :root{
     --content-color: #141922;
     --aside-color: #000000;
@@ -39,11 +47,11 @@ a{
 
 /* regole di debug */
 
-.debug #recently-played .album{
+/* .debug #recently-played .album{
     height: 250px;
     background-color: green;
     border: 1px solid black;
-}
+} */
 
 
 
@@ -82,7 +90,7 @@ aside .icon{
     text-align: center;
 }
 
-.aside-content-big{
+ #aside-content-top{
     display: none;
 }
 
@@ -117,12 +125,12 @@ aside .icon{
 }
 
 nav{
-    padding-top: 90px;
+    padding: 90px 0 30px;
 }
 
 nav li{
     list-style-type: none;
-    padding: 1.2rem 1.2rem;
+    padding: 0.8rem 1.2rem;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -166,9 +174,27 @@ nav a .line{
 }
 
 #recently-played .album{
-    margin: 1.2rem 0.3rem 0 0;
+    padding: 2rem 0.8rem 0 0;
     width: calc(100% / 2 - 0.4rem);
     list-style-type: none;
+}
+
+#recently-played .album a{
+    width: 100%;
+}
+
+#recently-played .album img{
+    width: 100%;
+}
+
+#recently-played .album h3{
+    padding: 0.5rem 0 0.3rem;
+}
+
+#recently-played .album .subtitle{
+    color: var(--nav-subtitle-color);
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 
 
@@ -192,7 +218,7 @@ nav a .line{
         display: none;
     }
 
-    .aside-content-big{
+    #aside-content-top{
         display: block;
     }
 
@@ -251,15 +277,16 @@ nav a .line{
         color: var(--nav-subtitle-color);
     }
 
-    .aside-content-big a, .aside-content-big h3{
+    #aside-content-top a, #aside-content-top h3{
         padding-left: 30px;
     }
 
-    .aside-content-big a{
+    #aside-content-top a{
         font-weight: 600;
+        font-size: 0.8rem;
     }
 
-    .aside-content-big span.text{
+    #aside-content-top span.text{
         padding-left: 10px;
     }
 
@@ -267,7 +294,7 @@ nav a .line{
         padding: 0.5rem 0;
     } 
 
-    .aside-content-big a:hover, .aside-content-big a:hover span{
+    #aside-content-top a:hover, #aside-content-top a:hover span{
         color: var(--title-icon-color);
     }
 
