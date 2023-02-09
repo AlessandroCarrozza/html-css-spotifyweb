@@ -92,7 +92,9 @@ aside .icon{
 
  #aside-content-top{
     display: none;
+    height: calc(100% - 100px);
 }
+
 
 .content{
     width: calc(100vw - 50px);
@@ -240,6 +242,7 @@ nav a .line{
 
     #aside-content-top{
         display: block;
+        overflow-y: hidden;
     }
 
     .content{
@@ -283,6 +286,8 @@ nav a .line{
 
     .playlists{
         padding-top: 25px;
+        overflow-y: scroll;
+        flex-direction: column;
     }
 
     .playlists h3{
@@ -297,7 +302,12 @@ nav a .line{
         color: var(--nav-subtitle-color);
     }
 
-    #aside-content-top a, #aside-content-top h3{
+    .playlists ul{
+        overflow-y: scroll;
+    }
+
+    #aside-content-top a, 
+    #aside-content-top h3{
         padding-left: 30px;
     }
 
@@ -314,10 +324,47 @@ nav a .line{
         padding: 0.5rem 0;
     } 
 
-    #aside-content-top a:hover, #aside-content-top a:hover span{
+    #aside-content-top a:hover, 
+    #aside-content-top a:hover span, 
+    .download-app:hover{
         color: var(--title-icon-color);
     }
 
+    #aside-content-bottom{
+        height: 100px;
+        padding: 0 25px;
+    }
+
+    .download-aside{
+        padding: 0.2rem 0;
+    }
+    
+    .download-app{
+        color: var(--nav-subtitle-color);
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+
+    .download-aside img{
+        height: 20px;
+    }
+
+    .name-profile{
+        padding-top: 5px;
+    }
+
+    .name-profile img{
+        height: 30px;
+        width: 30px;
+        background-color: var(--nav-subtitle-color);
+        border-radius: 50%;
+    }
+
+    .name-profile .name{
+        font-weight: 700;
+        padding-left: 10px;
+    }
 
     
 }
