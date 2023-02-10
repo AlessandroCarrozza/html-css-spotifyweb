@@ -249,10 +249,11 @@ nav a .line{
 }
 
 #footer-center{
-    /* debug */ background-color: green;
+    border: 1px solid white;
     width: 40%;
     max-width: 600px;
     height: 100%;
+    padding: 10px 0;
 }
 
 #footer-right{
@@ -292,7 +293,6 @@ nav a .line{
 .footer-center-bottom{
     height: 50%;
     width: 100%;
-    background-color: red;
 }
 
 .footer-center-top .icon{
@@ -302,6 +302,27 @@ nav a .line{
 .footer-center-top .icon.play{
     font-size: 32px;
 }
+
+.footer-center-bottom .linebar{
+    width: 70%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: var(--nav-subtitle-color);
+}
+
+.footer-center-bottom span{
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+    font-weight: 600;
+}
+
+.current-play{
+    width: 20%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
 /* fine footer */
 
 
