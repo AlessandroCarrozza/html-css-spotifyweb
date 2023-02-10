@@ -152,7 +152,7 @@ nav{
 
 nav li{
     list-style-type: none;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 0.7rem;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -241,22 +241,66 @@ nav a .line{
 
 
 /* inizio footer */
-.footer-left{
-    /* debug */ background-color: red;
-    width: 25%;
+#footer-left{
+    border: 1px solid white;
+    width: 28%;
+    max-width: 250px;
     height: 100%;
 }
 
-.footer-center{
+#footer-center{
     /* debug */ background-color: green;
-    width: 45%;
+    width: 40%;
+    max-width: 600px;
     height: 100%;
 }
 
-.footer-right{
+#footer-right{
     /* debug */ background-color: blue;
-    width: 25%;
+    width: 28%;
+    max-width: 180px;
     height: 100%;
+}
+
+#footer-left img{
+    /* debug ba;ckground-color: red */
+    height: 45px;
+    padding: 0 10px;
+}
+
+.song-info{
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.song-info div{
+    color: var(--nav-subtitle-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#footer-left i{
+    font-size: 20px;
+    color: var(--nav-subtitle-color);
+    padding: 0.2rem 0;
+}
+
+.footer-center-top{
+    height: 50%;
+    width: 220px;
+}
+.footer-center-bottom{
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+
+.footer-center-top .icon{
+    font-size: 20px;
+}
+
+.footer-center-top .icon.play{
+    font-size: 32px;
 }
 /* fine footer */
 
@@ -401,6 +445,7 @@ nav a .line{
         font-weight: 700;
         padding-left: 10px;
     }
+
     /* fine aside */
 
 
@@ -419,6 +464,12 @@ nav a .line{
     }
     /* fine contenuto principale */
     
+    /* inizio footer */
+    .song-info div{
+        display: inline-block;
+    }
+
+    /* fine footer */
 }
 
 
@@ -430,6 +481,11 @@ nav a .line{
 
     .content section .album{
         width: calc(100% / 4 - 0.4rem);
+    }
+
+    #footer-left .icon{
+        display: inline-block;
+        padding: 0 5px;
     }
 
 }
