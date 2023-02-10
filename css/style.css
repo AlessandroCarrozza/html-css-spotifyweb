@@ -39,6 +39,14 @@ a{
     text-align: center;
 }
 
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+}
+
 :root{
     --content-color: #141922;
     --aside-color: #000000;
@@ -82,16 +90,11 @@ aside .icons-top img{
 
 aside a{
     display: block;
-    padding-top: 10px;
-}
-
-aside .icon{
-    text-align: center;
+    padding-top: 0.8rem;
 }
 
 .icons-bottom{
-    padding-bottom: 10px;
-    text-align: center;
+    padding-bottom: 0.6rem;
 }
 
 .icons-bottom .download{
@@ -122,7 +125,7 @@ aside .icon{
     overflow-y: auto;
 }
 
-.content .cta{
+.cta{
     position: fixed;
     top: 0;
     left: 50px;
@@ -139,7 +142,6 @@ aside .icon{
 }
 
 .upgrade-btn{
-    display: inline-block;
     border: 1.5px solid var(--title-icon-color);
     padding: 0.6rem 2rem;
     border-radius: 50px;
@@ -149,7 +151,7 @@ aside .icon{
 }
 
 nav{
-    padding-top: 90px;
+    padding-top: 5.6rem;
 }
 
 nav li{
@@ -176,7 +178,6 @@ nav a .line{
     width: 40px;
     height: 3px;
     background-color: greenyellow;
-    position: relative;
     left: 50%;
     top: 3px;
     transform: translate(-50%, 0);
@@ -204,24 +205,14 @@ nav a .line{
     list-style-type: none;
 }
 
-.content section .album a{
-    width: 100%;
-}
-
-.album .disco{
-    position: relative;
-    
-}
-
 .layover i{
     display: none;
 }
 
 .disco:hover .layover{
-    position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     right: 0;
 }
@@ -231,16 +222,15 @@ nav a .line{
     font-size: 4rem;
 }
 
-
-.content section .album img{
+.content .album img{
     width: 100%;
 }
 
-.content section .album h3{
+.content .album h3{
     padding: 0.5rem 0 0.3rem;
 }
 
-.content section .album .subtitle{
+.content .album .subtitle{
     color: var(--nav-subtitle-color);
     font-weight: 600;
     font-size: 0.8rem;
@@ -277,24 +267,24 @@ nav a .line{
     width: 38%;
     max-width: 600px;
     height: 100%;
-    padding: 10px 0;
+    padding: 0.6rem 0;
 }
 
 #footer-right{
     width: 30%;
     max-width: 220px;
     height: 100%;
-    padding-right: 10px;
+    padding-right: 0.6rem;
 }
 
 #footer-left img{
     height: 45px;
-    padding: 0 10px;
+    padding: 0 0.6rem;
 }
 
 .song-info{
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
 }
 
 .song-info a{
@@ -304,7 +294,7 @@ nav a .line{
 }
 
 #footer-left i{
-    font-size: 20px;
+    font-size: 1.2rem;
     color: var(--nav-subtitle-color);
     padding: 0.2rem 0;
 }
@@ -324,11 +314,11 @@ nav a .line{
 }
 
 .footer-center-top .icon{
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .footer-center-top .icon.play{
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .footer-center-top .icon.play:hover{
@@ -350,12 +340,7 @@ nav a .line{
     display: block;
 }
 
-.current-play{
-    position: relative;
-}
-
 .current-point{
-    position: absolute;
     height: 15px;
     width: 15px;
     background-color: #ffffff;
@@ -379,8 +364,7 @@ nav a .line{
 }
 
 #footer-right i{
-    font-size: 16px;
-    
+    font-size: 1rem;    
 }
 
 #footer-right .linebar{
@@ -389,11 +373,7 @@ nav a .line{
     border-radius: 30px;
     background-color: var(--nav-subtitle-color);
 }
-
-
-
 /* fine footer */
-
 
 
 
@@ -411,7 +391,15 @@ nav a .line{
         height: 30px;
     }
 
-    aside .icon{
+    aside a{
+        padding: 0.5rem 0;
+    } 
+
+    .icons-texts a{
+        padding: 0.3rem 0;
+    }
+
+    .icons-top{
         display: none;
     }
 
@@ -432,7 +420,7 @@ nav a .line{
         margin: 1rem 0;
     }
 
-    .icon-text a .text{
+    .icon-text .text{
         color: var(--nav-subtitle-color);
     }
 
@@ -440,7 +428,7 @@ nav a .line{
         position: relative;
     }
 
-    .icon-text a .text.col-white{
+    .icon-text .text.col-white{
         color: var(--title-icon-color);
     }
 
@@ -454,7 +442,7 @@ nav a .line{
     }
 
     .playlists{
-        padding-top: 25px;
+        padding-top: 1.5rem;
         overflow-y: hidden;
         flex-direction: column;
     }
@@ -464,7 +452,7 @@ nav a .line{
     }
 
     .playlists i{
-        font-size: 50px;
+        font-size: 3.1rem;
     }
 
     .playlists a{
@@ -472,12 +460,12 @@ nav a .line{
     }
 
     .playlists ul{
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     #aside-content-top a, 
     #aside-content-top h3{
-        padding-left: 30px;
+        padding-left: 1.9rem;
     }
 
     #aside-content-top a{
@@ -486,12 +474,8 @@ nav a .line{
     }
 
     #aside-content-top span.text{
-        padding-left: 10px;
+        padding-left: 0.6rem;
     }
-
-    aside a{
-        padding: 0.5rem 0;
-    } 
 
     #aside-content-top a:hover, 
     #aside-content-top a:hover span, 
@@ -502,7 +486,7 @@ nav a .line{
     #aside-content-bottom{
         display: block;
         height: 100px;
-        padding: 0 25px;
+        padding: 0 1.6rem;
     }
 
     .download-aside{
@@ -513,7 +497,7 @@ nav a .line{
         color: var(--nav-subtitle-color);
         font-size: 0.8rem;
         font-weight: 600;
-        padding-left: 10px;
+        padding-left: 0.6rem;
     }
 
     .download-aside img{
@@ -533,7 +517,7 @@ nav a .line{
 
     .name-profile .name{
         font-weight: 700;
-        padding-left: 10px;
+        padding-left: 0.6rem;
     }
 
     /* fine aside */
@@ -544,7 +528,7 @@ nav a .line{
         width: calc(100% - 300px);
     }
 
-    .content .cta{
+    .cta{
         left: 300px; 
         min-width: calc(100% - 300px);
     } 
@@ -554,21 +538,18 @@ nav a .line{
     }
     /* fine contenuto principale */
     
+
     /* inizio footer */
     .song-info a{
         display: inline-block;
     }
-
-
-
     /* fine footer */
 }
 
 
-
 @media screen and (min-width: 992px){
     nav li{
-        padding: 1rem 0.8rem;
+        padding: 1rem 0.5rem;
     } 
 
     .content section .album{
@@ -579,9 +560,7 @@ nav a .line{
         display: inline-block;
         padding: 0 5px;
     }
-
 }
-
 
 
 @media screen and (min-width: 1200px){
@@ -592,5 +571,4 @@ nav a .line{
     .content section .album{
         width: calc(100% / 6 - 0.4rem);
     }
-
 }
