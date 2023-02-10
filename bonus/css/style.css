@@ -139,6 +139,8 @@ aside a{
 
 .upgrade-btn:hover{
     transform: scale(1.2);
+    background-color: #ffffff;
+    color: black;
 }
 
 .upgrade-btn{
@@ -148,6 +150,7 @@ aside a{
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--title-icon-color);
+    transition: all 0.7s;
 }
 
 nav{
@@ -195,15 +198,20 @@ nav a .line{
     font-size: 2rem;
 }
 
-.content section .albums{
-    flex-wrap: wrap;
+/* .content section .albums{
+    flex-direction: row;
+}  */
+
+.content{
+    overflow-x: scroll;
 }
 
 .content section .album{
     padding: 2rem 0.8rem 0 0;
-    width: calc(100% / 2 - 0.4rem);
+    /* width: calc(100% / 2 - 0.4rem); */
     list-style-type: none;
 }
+
 
 .layover i{
     display: none;
@@ -552,9 +560,9 @@ nav a .line{
         padding: 1rem 0.5rem;
     } 
 
-    .content section .album{
+    /* .content section .album{
         width: calc(100% / 4 - 0.4rem);
-    }
+    } */
 
     #footer-left .icon{
         display: inline-block;
@@ -568,7 +576,18 @@ nav a .line{
         padding: 1rem 0.5rem;
     } 
 
-    .content section .album{
+    /* .content section .album{
         width: calc(100% / 6 - 0.4rem);
+    } */
+}
+
+
+@media screen and (max-height: 500px){
+    .cta{
+        display: none;
+    }
+
+    nav{
+        padding-top: 2rem;
     }
 }
