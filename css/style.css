@@ -130,6 +130,12 @@ aside .icon{
     min-width: calc(100% - 50px);
     height: 80px;
     background-color: var(--cta-color);
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+.upgrade-btn:hover{
+    transform: scale(1.2);
 }
 
 .upgrade-btn{
@@ -139,10 +145,6 @@ aside .icon{
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translate(0, -50%);
     color: var(--title-icon-color);
 }
 
@@ -205,6 +207,30 @@ nav a .line{
 .content section .album a{
     width: 100%;
 }
+
+.album .disco{
+    position: relative;
+    
+}
+
+.layover i{
+    display: none;
+}
+
+.disco:hover .layover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.disco:hover .layover i{
+    display: block;
+    font-size: 4rem;
+}
+
 
 .content section .album img{
     width: 100%;
@@ -271,7 +297,7 @@ nav a .line{
     line-height: 18px;
 }
 
-.song-info div{
+.song-info a{
     color: var(--nav-subtitle-color);
     font-size: 0.8rem;
     font-weight: 600;
@@ -281,6 +307,11 @@ nav a .line{
     font-size: 20px;
     color: var(--nav-subtitle-color);
     padding: 0.2rem 0;
+}
+
+.song-info a:hover,
+#footer-left i:hover{
+    color: #ffffff;
 }
 
 .footer-center-top{
@@ -300,11 +331,38 @@ nav a .line{
     font-size: 32px;
 }
 
+.footer-center-top .icon.play:hover{
+    transform: scale(1.2);
+}
+
 #footer-center .linebar{
     width: 70%;
     height: 5px;
     border-radius: 30px;
     background-color: var(--nav-subtitle-color);
+}
+
+.linebar:hover .current-play{
+    background-color: greenyellow;
+}
+
+.linebar:hover .current-point{
+    display: block;
+}
+
+.current-play{
+    position: relative;
+}
+
+.current-point{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    right: 0;
+    bottom: -5px;
+    border-radius: 50%;
+    display: none;
 }
 
 .footer-center-bottom span{
@@ -497,7 +555,7 @@ nav a .line{
     /* fine contenuto principale */
     
     /* inizio footer */
-    .song-info div{
+    .song-info a{
         display: inline-block;
     }
 
