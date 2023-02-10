@@ -198,17 +198,13 @@ nav a .line{
     font-size: 2rem;
 }
 
-/* .content section .albums{
-    flex-direction: row;
-}  */
-
-.content{
+.content .albums{
     overflow-x: scroll;
+    padding-bottom: 1rem;
 }
 
 .content section .album{
     padding: 2rem 0.8rem 0 0;
-    /* width: calc(100% / 2 - 0.4rem); */
     list-style-type: none;
 }
 
@@ -231,7 +227,7 @@ nav a .line{
 }
 
 .content .album img{
-    width: 100%;
+    width: 250px;
 }
 
 .content .album h3{
